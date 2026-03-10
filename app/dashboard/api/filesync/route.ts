@@ -57,11 +57,6 @@ async function extractContent(fullPath: string): Promise<string> {
       const parser = new PptxParser(fullPath);
 
       const slides = await parser.extractText();
-
-      slides.forEach(slide => {
-        console.log("Slide:", slide.id);
-        console.log(slide.text.join("\n"));
-      });
       return slides.map(slide => slide.text.join("\n")).join("\n---\n");
     } else {
       try {
