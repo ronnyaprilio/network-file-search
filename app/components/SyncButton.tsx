@@ -11,7 +11,7 @@ export default function SyncButton() {
     setMessage(null)
 
     try {
-      const response = await fetch('dashboard/api/files', {
+      const response = await fetch('dashboard/api/filesync', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
