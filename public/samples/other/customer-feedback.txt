@@ -1,0 +1,13 @@
+Customer Feedback Summary
+
+Several customers reported that the document search feature
+significantly improved their workflow when locating technical
+documentation.
+
+Suggestions for improvement include:
+- faster preview loading
+- support for additional file formats
+- better filtering options for search results
+
+Overall satisfaction with the platform increased after the
+search functionality was introduced.

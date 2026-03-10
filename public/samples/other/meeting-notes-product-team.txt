@@ -1,0 +1,14 @@
+Product Team Meeting Notes - March 10
+
+Agenda:
+1. Review progress on document indexing system
+2. Improve search performance
+3. Discuss UI improvements for file preview
+
+Discussion summary:
+The engineering team reported that search indexing is now able to
+process PDF, DOCX, and TXT files. The next step is implementing
+keyword highlighting in search results.
+
+The design team suggested adding a preview panel so users can
+quickly read documents before downloading them.
