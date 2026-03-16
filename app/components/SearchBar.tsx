@@ -25,11 +25,11 @@ export default function SearchBar() {
 
       <div className="space-y-2">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white">
-          <span className="text-emerald-500">NETWORK FILE SEARCH</span>
+          <span className="text-emerald-500">DOCUMENT FILE SEARCH</span>
         </h1>
 
         <p className="text-emerald-600/80 font-mono text-sm md:text-base">
-          Lightweight Access Network File Search
+          Lightweight Access Network Document File Search
         </p>
       </div>
 
