@@ -1,4 +1,4 @@
-# Network File Search
+# Document File Search
 
 Lightweight offline network file search with content highlighting and inline SVG icons.
 

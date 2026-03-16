@@ -91,7 +91,7 @@ export default function SearchResultClient() {
 
       <div className="relative z-10 border-b border-emerald-900/30 py-6 px-6 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
         <div onClick={() => router.push("/")} className="text-emerald-500 font-bold text-lg cursor-pointer whitespace-nowrap">
-          NETWORK FILE SEARCH
+          DOCUMENT FILE SEARCH
         </div>
 
         <form onSubmit={handleSearch} className="w-full max-w-2xl">

@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Network File Search",
-  description: "Lightweight Network File Search",
+  title: "Document File Search",
+  description: "Lightweight Network Document File Search",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export const viewport = {
