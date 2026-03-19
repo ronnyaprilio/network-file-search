@@ -6,7 +6,9 @@ export default function Navbar() {
         <div className="flex items-center gap-3 font-mono text-emerald-400">
           <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
           <span className="tracking-wider">
-            DOC<span className="text-emerald-700">://</span>FILE SEARCH
+            DOC<span className="text-emerald-700">://</span>
+            <span className="sm:hidden">FS</span>
+            <span className="hidden sm:inline">FILE SEARCH</span>
           </span>
         </div>
 

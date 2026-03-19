@@ -12,7 +12,7 @@ export default function HomePage() {
 
       <section className="relative z-10 grow flex flex-col items-center px-4 sm:px-6 lg:px-8 py-12">
         
-        <div className="h-20"></div>
+        <div className="hidden sm:block h-20"></div>
 
         <SearchBar />
 
