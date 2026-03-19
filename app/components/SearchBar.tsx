@@ -1,11 +1,24 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState, KeyboardEvent } from "react";
+import { useState, KeyboardEvent, useEffect } from "react";
 
 export default function SearchBar() {
   const router = useRouter();
   const [query, setQuery] = useState("");
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 640);
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   function handleSearch() {
     const q = query.trim();
@@ -28,7 +41,7 @@ export default function SearchBar() {
           <span className="text-emerald-500">DOCUMENT FILE SEARCH</span>
         </h1>
 
-        <p className="text-emerald-600/80 font-mono text-sm md:text-base">
+        <p className="hidden md:block text-emerald-600/80 font-mono text-sm md:text-base">
           Lightweight Access Network Document File Search
         </p>
       </div>
@@ -61,7 +74,10 @@ export default function SearchBar() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Enter File name or content..."
+            placeholder={isMobile 
+              ? "Search..." 
+              : "Enter File name or content..."
+            }
             className={`
               w-full
               bg-transparent
